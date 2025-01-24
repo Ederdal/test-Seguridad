@@ -18,3 +18,9 @@ class User(BaseModel):
     apellidos: str  # Anotación de tipo corregida
     genero: Genero  # Anotación de tipo corregida
     roles: List[Role]  # Anotación de tipo corregida
+    
+class UpdateUsuario(BaseModel):
+    nombre: Optional[str]
+    apellidos: Optional[str]
+    genero: Optional[Genero]
+    roles: Optional[List[Role]]
